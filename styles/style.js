@@ -10,6 +10,7 @@ export default StyleSheet.create({
     backgroundColor: 'lightgrey',
     minWidth: 200,
     textAlign: 'center',
+    fontFamily: 'WalterTurncoat-Regular',
     paddingBottom: 5,
     paddingTop: 5,
     borderRadius: 10,
@@ -17,6 +18,7 @@ export default StyleSheet.create({
   },
   infoText: {
     marginBottom: 10,
+    fontFamily: 'WalterTurncoat-Regular',
   },
   nameButton: {
     alignItems: 'center',
@@ -27,10 +29,11 @@ export default StyleSheet.create({
   },
   nameButtonText: {
     color: '#fff',
+    fontFamily: 'WalterTurncoat-Regular',
   },
   glText: {
     color: 'tomato',
-    fontWeight: 'bold',
+    fontFamily: 'WalterTurncoat-Regular',
     marginBottom: 10,
   },
   startButton: {
@@ -44,7 +47,8 @@ export default StyleSheet.create({
   },
   rulesHeader: {
     marginBottom: 10,
-    fontWeight: 'bold',
+    fontFamily: 'WalterTurncoat-Regular',
+    fontSize: 20,
   },
   header: {
     marginTop: 30,
@@ -59,7 +63,7 @@ export default StyleSheet.create({
   },
   title: {
     color: '#fff',
-    fontWeight: 'bold',
+    fontFamily: 'WalterTurncoat-Regular',
     flex: 1,
     fontSize: 23,
     textAlign: 'center',
@@ -67,7 +71,7 @@ export default StyleSheet.create({
   },
   author: {
     color: '#fff',
-    fontWeight: 'bold',
+    fontFamily: 'WalterTurncoat-Regular',
     flex: 1,
     fontSize: 15,
     textAlign: 'center',
@@ -121,7 +125,8 @@ export default StyleSheet.create({
   },
   buttonText: {
     color:"#2B2B52",
-    fontSize: 20
+    fontSize: 20,
+    fontFamily: 'WalterTurncoat-Regular',
   },
   scoreboard: {
     flex: 1,
@@ -141,7 +146,7 @@ export default StyleSheet.create({
   },
   scoreboardTitleText: {
     color: '#fff',
-    fontWeight: 'bold',
+    fontFamily: 'WalterTurncoat-Regular',
   },
   gameboardHeader: {
     backgroundColor: 'lightgrey',
@@ -150,16 +155,17 @@ export default StyleSheet.create({
     marginBottom: 10,
   },
   gameboardHeaderText: {
-    fontWeight: 'bold',
+    fontFamily: 'WalterTurncoat-Regular',
     fontSize: 20,
   },
   roundText: {
-    fontWeight: 'bold',
+    fontFamily: 'WalterTurncoat-Regular',
+    fontSize: 16,
     marginBottom: 10,
   },
   throwsText: {
     marginTop: 10,
-    fontWeight: 'bold',
+    fontFamily: 'WalterTurncoat-Regular',
     marginBottom: 10,
   },
   statusContainer: {
@@ -168,25 +174,31 @@ export default StyleSheet.create({
     borderRadius: 10,
     marginBottom: 10,
   },
+  statusText: {
+    fontFamily: 'WalterTurncoat-Regular',
+    fontSize: 16,
+  },
   pointsText: {
-    fontWeight: 'bold',
+    fontFamily: 'WalterTurncoat-Regular',
     marginBottom: 10,
     fontSize: 18,
   },
   playerText: {
-    fontWeight: 'bold',
-    textDecorationLine: 'underline',
+    fontFamily: 'WalterTurncoat-Regular',
     marginBottom: 10,
     fontSize: 18,
     color: 'tomato',
   },
   bonusText: {
-    fontWeight: 'bold',
+    fontFamily: 'WalterTurncoat-Regular',
     color: 'tomato',
   },
   scoreboardHeader: {
-    fontWeight: 'bold',
+    fontFamily: 'WalterTurncoat-Regular',
     fontSize: 20,
     marginBottom: 10,
-  }
+  },
+  scoreboardText: {
+    fontFamily: 'WalterTurncoat-Regular',
+  },
 });

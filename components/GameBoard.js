@@ -300,7 +300,7 @@ export default GameBoard = ({ navigation, route }) => {
                 </Container>
                 <Text style={styles.throwsText}>Throws left: {nbrOfThrowsLeft}</Text>
                 <View style={styles.statusContainer}>
-                    <Text>{status}</Text>
+                    <Text style={styles.statusText}>{status}</Text>
                 </View>
                 {!gameEndStatus ?
                 <>
@@ -321,7 +321,7 @@ export default GameBoard = ({ navigation, route }) => {
                 <Text style={styles.pointsText}>Total points: {points}</Text>
                 {(BONUS_POINTS_LIMIT - points) > 0 ?
                     <>
-                        <Text>You are {BONUS_POINTS_LIMIT - points} point(s) away from from bonus points</Text>
+                        <Text style={styles.infoText}>You are {BONUS_POINTS_LIMIT - points} point(s) away from from bonus points</Text>
                     </>
                     :
                     <>

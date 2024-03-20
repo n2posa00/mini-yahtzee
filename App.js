@@ -1,13 +1,28 @@
 import Home from './components/Home';
 import GameBoard from './components/GameBoard';
 import Scoreboard from './components/Scoreboard';
+import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import styles from './styles/style';
+import { useFonts } from 'expo-font';
 
 const Tab = createBottomTabNavigator();
 
 export default function App() {
+  
+  const [loaded] = useFonts({
+    'WalterTurncoat-Regular': require('./assets/fonts/WalterTurncoat-Regular.ttf'),
+  });
+
+  if (!loaded) {
+    return (
+      <View style={styles.container}>
+        <Text style={{marginTop: 60, fontWeight: "bold", fontSize: 20}}>Loading fonts...</Text>
+    </View>
+    );
+  }
 
   return (
     <NavigationContainer>

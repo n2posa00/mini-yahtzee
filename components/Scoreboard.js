@@ -63,11 +63,19 @@ export default Scoreboard = ({ navigation }) => {
                         {scoreboard.map((row, index) => {
                             return (
                                 <DataTable.Row key={index}>
-                                    <DataTable.Cell numeric style={{ flex: 0.5, paddingRight: 20, borderRightWidth: 1 }}>{index + 1}</DataTable.Cell>
-                                    <DataTable.Cell style={{ flex: 1, borderRightWidth: 1, paddingLeft: 10 }}>{row.name}</DataTable.Cell>
-                                    <DataTable.Cell style={{ flex: 1.5, borderRightWidth: 1, paddingLeft: 10 }}>{row.date}</DataTable.Cell>
-                                    {/* <DataTable.Cell style={{ flex: 1, borderRightWidth: 1, paddingLeft: 10 }}>{row.time}</DataTable.Cell> */}
-                                    <DataTable.Cell numeric style={{ flex: 1 }}>{row.points}</DataTable.Cell>
+                                    <DataTable.Cell numeric style={{ flex: 0.5, paddingRight: 20, borderRightWidth: 1, fontFamily: 'WalterTurncoat-Regular' }}>
+                                        <Text style={styles.scoreboardText}>{index + 1}</Text>
+                                    </DataTable.Cell>
+                                    <DataTable.Cell style={{ flex: 1, borderRightWidth: 1, paddingLeft: 10, fontFamily: 'WalterTurncoat-Regular' }}>
+                                        <Text style={styles.scoreboardText}>{row.name}</Text>
+                                    </DataTable.Cell>
+                                    <DataTable.Cell style={{ flex: 1.5, borderRightWidth: 1, paddingLeft: 10, fontFamily: 'WalterTurncoat-Regular' }}>
+                                        <Text style={styles.scoreboardText}>{row.date}</Text>
+                                    </DataTable.Cell>
+                                    {/* <DataTable.Cell style={{ flex: 1, borderRightWidth: 1, paddingLeft: 10, fontFamily: 'WalterTurncoat-Regular' }}>{row.time}</DataTable.Cell> */}
+                                    <DataTable.Cell numeric style={{ flex: 1, fontFamily: 'WalterTurncoat-Regular' }}>
+                                        <Text style={styles.scoreboardText}>{row.points}</Text>
+                                    </DataTable.Cell>
                                 </DataTable.Row>
                             );
                         })}
